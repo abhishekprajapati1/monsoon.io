@@ -9,7 +9,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      city: "Mumbai",
+      city: "Delhi",
       query: "",
       c_response: {},
       sevenF_response: []
@@ -56,6 +56,9 @@ class App extends React.Component {
     }
   }
 
+  componentDidMount(){
+    this.getWeatherReport();
+  }
   // this function is called to get the forecast for next 7 days.
   async getForecast(lon, lat) {
     let key = '6ff1648d640ad3c6260db1ab0fecd897';
