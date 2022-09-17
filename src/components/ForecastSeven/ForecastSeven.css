@@ -1,0 +1,36 @@
+.seven-forecast{
+    background-color: #272f36;
+    width: 49%;
+    padding-inline-start: 0px;
+    color: white;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+@media (max-width: 768px) {
+    .seven-forecast{
+        width: 80%;
+    }
+}
+@media (max-width: 425px) {
+    .seven-forecast{
+        width: 95%;
+        height: auto;
+    }
+}
+
+.seven-forecast li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.seven-forecast li img{
+    max-width: 50px;
+    height: auto;
+}
+
+.seven-forecast li p{
+    font-size: .8rem;
+}

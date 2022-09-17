@@ -1,0 +1,24 @@
+.App {
+  height: 100vh;
+  text-align: center;
+  background-image: url(./components/wave.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #ededed;
+  overflow: auto;
+}
+
+
+.response-container{
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .response-container{
+    flex-direction: column;
+  }
+}
