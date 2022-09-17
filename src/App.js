@@ -29,7 +29,7 @@ class App extends React.Component {
     }
 
     try {
-      let URI = `http://api.openweathermap.org/data/2.5/weather?q=${(this.state.query == "") ? this.state.city : this.state.query}&appid=${this.APIKEY}&units=metric`;
+      let URI = `https://api.openweathermap.org/data/2.5/weather?q=${(this.state.query == "") ? this.state.city : this.state.query}&appid=${this.APIKEY}&units=metric`;
       const res = await fetch(URI);
       const data = await res.json();
 
