@@ -20,7 +20,7 @@ class ForecastSeven extends Component {
               let c_date = date.getDate();
               let month = date.getMonth();
               let monthName = "";
-              console.log(elem);
+              // console.log(elem);
               let dayName = "";
               switch (day) {
                 case 0:
