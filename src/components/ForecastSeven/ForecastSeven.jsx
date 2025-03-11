@@ -13,7 +13,7 @@ class ForecastSeven extends Component {
       <ul className='seven-forecast'>
         <p style={{paddingLeft:"20px"}}>Next 7 day forecast:</p>
         {
-          this.props.data.map((elem, index) => {
+          this.props.sdata.map((elem, index) => {
             if (index > 0) {
               let date = new Date(elem.dt * 1000);
               let day = date.getDay();
